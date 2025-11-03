@@ -10,12 +10,12 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = 'primary', children, showArrow = false, arrowDirection = 'right', ...props }, ref) => {
-    const baseClasses = 'inline-flex items-center justify-center rounded-lg font-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[var(--bg-900)] disabled:opacity-50 disabled:pointer-events-none';
+    const baseClasses = 'inline-flex items-center justify-center rounded-lg font-medium transition-all focus:outline-none disabled:opacity-50 disabled:pointer-events-none';
     
     const variants = {
-      primary: 'bg-[var(--brand-neon)] text-[var(--bg-900)] hover:bg-[var(--brand-neon)]/90 focus:ring-[var(--brand-neon)]',
-      outline: 'border border-[var(--text-300)] text-[var(--text-200)] hover:bg-[var(--bg-800)] hover:border-[var(--text-200)] focus:ring-[var(--text-300)]',
-      ghost: 'text-[var(--text-200)] hover:bg-[var(--bg-800)] focus:ring-[var(--text-300)]',
+      primary: 'bg-[var(--brand-neon)] text-[var(--bg-900)] hover:bg-[var(--brand-neon)]/90',
+      outline: 'border border-[var(--text-300)] text-[var(--text-200)] hover:bg-[var(--bg-800)] hover:border-[var(--text-200)]',
+      ghost: 'text-[var(--text-200)] hover:bg-[var(--bg-800)]',
     };
 
 
