@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark theme background colors - will be updated with exact Figma hex values */
+  --bg-900: #0a0a0a;
+  --bg-800: #1a1a1a;
+  
+  /* Text colors - will be updated with exact Figma hex values */
+  --text-100: #ffffff;
+  --text-200: #e5e5e5;
+  --text-300: #a3a3a3;
+  
+  /* Brand colors - will be updated with exact Figma hex values */
+  --brand-neon: #00ff88;
+  
+  /* Font family - will be updated with exact Figma font */
+  --font-sans: 'Roboto', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--bg-900)] text-[var(--text-200)] antialiased;
+  }
+}
+
